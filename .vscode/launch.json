@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+        "name": "Attach to Chrome",
+        "port": 9222,
+        "request": "attach",
+        "type": "chrome",
+        "webRoot": "${workspaceFolder}"
+    },
+
+
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug App",
+      "program": "${workspaceFolder}/ecommerce-backend/app.js", // Change to your entry file
+      "skipFiles": ["<node_internals>/**"]
+    }
+  ]
+}
